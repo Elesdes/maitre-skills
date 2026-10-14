@@ -1,0 +1,7 @@
+# Agent-local settings: contain the absolute path to your private vault.
+.claude/settings.local.json
+.opencode/settings.local.json
+.agents/settings.local.json
+settings.local.maitre.example.json
+
+.DS_Store

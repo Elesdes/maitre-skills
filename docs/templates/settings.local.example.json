@@ -1,0 +1,8 @@
+{
+  "maitre": {
+    "vault": "/absolute/path/to/your/maitre-vault",
+    "projectSlug": "my-project",
+    "recallLimit": 7,
+    "autoPropose": true
+  }
+}

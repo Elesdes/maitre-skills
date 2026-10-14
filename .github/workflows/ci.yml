@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # shellcheck, bash, git and jq are preinstalled on GitHub's Ubuntu runners.
+      - name: shellcheck
+        run: shellcheck install.sh tests/run.sh
+
+      - name: tests
+        run: bash tests/run.sh
